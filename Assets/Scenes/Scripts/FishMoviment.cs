@@ -48,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
         if (mySize < enemySize)
         {
             Debug.Log("Jogador é menor e morreu!");
+            GameManager.GameOver();
             Destroy(gameObject); // Mata o jogador
         }
         else
